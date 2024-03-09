@@ -1,0 +1,6 @@
+<div *ngIf="freetime">
+    <h3>{{freetime.name}}  details</h3>
+    <h3>id : {{freetime.id}}</h3>
+    <label for="freetime-name"> Freetime details :</label>
+    <input id="freetime-name" [(ngModel)]="freetime.name" placeholder="name">
+</div>

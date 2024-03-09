@@ -1,0 +1,14 @@
+<h2>My new assignment:</h2>
+<ul>
+    <li *ngFor="let freetime of freetimes">
+        <button type="button"(click)="OnSelect(freetime)"><!--Event handling-->
+            <span>
+                {{freetime.id}}
+            </span>
+            <span>
+                {{freetime.name}}
+            </span>
+        </button>
+    </li>
+</ul>
+<app-freetime-details [freetime]="selectedfreetime"></app-freetime-details> <!---Property Binding-->
